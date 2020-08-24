@@ -30,7 +30,8 @@ var (
   }
 
   cmdMBPUVersion = &cobra.Command{
-    Use:   "version",
+    Use:   "version [device index]",
+    Args: cobra.MinimumNArgs(1),
     Short: "Print MBPU version",
     Run: func(cmd *cobra.Command, args []string) {
       version(args[0])      
