@@ -3,7 +3,7 @@ package main
 import (
   "os"
   
-  "github.com/the-medium/mbpu-tools/cmd"
+  "github.com/hyperledger/fabric/mbpu-tools/cmd"
 )
 
 func main() {
