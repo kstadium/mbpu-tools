@@ -59,7 +59,7 @@ func version(index string) {
     return
   }
 
-  mpk, err := mediumpk.New(idx, 64)
+  mpk, err := mediumpk.New(idx, 64, "")
   if err != nil {
     fmt.Println(err)
     return
@@ -99,7 +99,7 @@ func testMBPU(index int) {
 }
 
 func sign(index, maxPending int) (err error) {
-  mpk, err := mediumpk.New(index, maxPending)
+  mpk, err := mediumpk.New(index, maxPending, "")
   if err != nil{
     return
   }
@@ -155,7 +155,7 @@ func sign(index, maxPending int) (err error) {
 }
 
 func verify(index, maxPending int) (err error) {
-  mpk, err := mediumpk.New(index, maxPending)
+  mpk, err := mediumpk.New(index, maxPending, "")
   if err != nil{
     return
   }
